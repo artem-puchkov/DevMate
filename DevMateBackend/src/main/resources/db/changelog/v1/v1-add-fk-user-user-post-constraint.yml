@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Artem
+      changes:
+        - addColumn:
+            tableName: user_posts
+            columns:
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_user_id
+                    referencedTableName: users
+                    referencedColumnNames: id

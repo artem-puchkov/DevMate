@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Artem
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: user_name
+                  value: igor_tk
+              - column:
+                  name: user_email
+                  value: igor23aa@gmail.com
+              - column:
+                  name: user_about
+                  value: Учился на Java разработчика, выучил Spring и все, что с ним связано. В данный момент ищу работу
+              - column:
+                  name: user_telegram
+                  value: "https://t.me/IgorLit"
+              - column:
+                  name: user_password
+                  value: "$2a$10$jAcSa0eQBLVM/ukisWGQxeOD0H79F13BsxU64pvUyNpCJ8Dh9hbHy" # encoded in Base64 password "123456a12"
+              - column:
+                  name: role
+                  value: USER
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: user_name
+                  value: Bob
+              - column:
+                  name: user_email
+                  value: robert113@gmail.com
+              - column:
+                  name: user_telegram
+                  value: "https://t.me/BobMaffin"
+              - column:
+                  name: user_password
+                  value: "$2a$10$jAcSa0eQBLVM/ukisWGQxeOD0H79F13BsxU64pvUyNpCJ8Dh9hbHy" # encoded in Base64 password "123456a12"
+              - column:
+                  name: role
+                  value: USER

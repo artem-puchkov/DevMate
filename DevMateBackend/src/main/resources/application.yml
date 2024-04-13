@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres:5432/devmate
+    username: postgres
+    password: secret
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yml
+    enabled: true
+jwt:
+  secret: 46323efe035a5595708462e420a1653e6e4b6f9961c507d5df266e1cb3c63bdb
+  expiration: 86400
+  alg: HS256
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-test.yml

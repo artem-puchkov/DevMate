@@ -1,0 +1,23 @@
+export const techs = [
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Angular",
+    "Vue",
+    "C",
+    "C++",
+    "Go",
+    "C#",
+    ".NET",
+    "Flutter",
+    "Kotlin",
+    "Swift",
+    "Ruby",
+    "Rust",
+    "Scala",
+    "Unity",
+    "Unreal Engine",
+    "DevOps",
+    "1C"
+];

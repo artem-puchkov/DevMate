@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Artem
+      changes:
+        - createTable:
+            tableName: user_posts
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: post_title
+                  type: varchar(120)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: post_description
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: post_techs
+                  type: varchar(50) []
+              - column:
+                  name: linked_in
+                  type: varchar(120)
+              - column:
+                  name: instagram
+                  type: varchar(120)
+              - column:
+                  name: vk
+                  type: varchar(120)
+              - column:
+                  name: git_hub
+                  type: varchar(120)
+              - column:
+                  name: x
+                  type: varchar(120)
+              - column:
+                  name: post_creation_date
+                  type: timestamp
+              - column:
+                  name: post_updating_date
+                  type: timestamp

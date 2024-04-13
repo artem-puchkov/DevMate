@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Artem
+      changes:
+        - insert:
+            tableName: user_posts
+            columns:
+              - column:
+                  name: post_title
+                  value: "Ищу frontend разработчика для создания совместного проекта"
+              - column:
+                  name: post_description
+                  value: "Я начинающий backend разработчик, учу Python более года. Есть идея по созданию небольшого форума, 
+                  с меня вся серверная часть, с вас хорошо работающий и красивый фронт. Положим этот проект к себе 
+                  и пойдем пытаться покорять этот, довольно непростой в наши времена, рынок IT"
+              - column:
+                  name: post_creation_date
+                  value: 2022-10-15 15:30:00
+              - column:
+                  name: post_updating_date
+                  value: 2022-10-15 15:30:00
+              - column:
+                  name: user_id
+                  value: 1
+        - insert:
+            tableName: user_posts
+            columns:
+              - column:
+                  name: post_title
+                  value: "В поисках талантливого devOps инженера"
+              - column:
+                  name: post_description
+                  value: "Написал мой первый full-stack проект, потратил очень много времени и сил и очень бы хотелось увидеть
+                          его на просторах интернета, но увы, совсем не умею в devOps. Всех этих вещей по типу Docker и k8s я очень
+                          боюсь и не в силах разобраться самостоятельно - поэтому и ищу того, кто помог бы мне. Вам практика, а мне
+                          задеплоенный проект. Писать в телеграм"
+              - column:
+                  name: post_creation_date
+                  value: 2022-11-21 16:00:00
+              - column:
+                  name: post_updating_date
+                  value: 2022-11-21 16:00:00
+              - column:
+                  name: user_id
+                  value: 2
